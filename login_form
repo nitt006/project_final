@@ -1,0 +1,25 @@
+<html>
+ <body bgcolor=wheat>
+
+   <center>
+ <form action="./log" method=post>
+
+<input type=radio value="student" name="type">student 
+<input type=radio value="alumni" name="type">alumni<br><br>
+
+  USER NAME<input type="text" name=username><br><br>
+
+  PASSWORD<input type="password" name=password><br>
+
+ <input type="submit" value=login><br><br><br>
+
+<h4>NEW USER?</h4>
+
+	&nbsp<a href="registration.html">click here</a>
+</form>
+
+   </center>
+
+ </body>
+
+</html>
