@@ -1,0 +1,77 @@
+<web-app>
+ 
+   <context-param>
+      <param-name>p1</param-name>
+      <param-value>oracle.jdbc.driver.OracleDriver</param-value>
+   </context-param>
+
+   <context-param>
+      <param-name>p2</param-name>
+      <param-value>jdbc:oracle:thin:@localhost:0:orcl</param-value>
+   </context-param>
+
+   <context-param>
+      <param-name>p3</param-name>
+      <param-value>system</param-value>
+   </context-param>
+
+   <context-param>
+      <param-name>p4</param-name>
+      <param-value>9300089405r</param-value>
+   </context-param>
+   
+   
+      
+ <servlet>
+   <servlet-name>first</servlet-name>
+   <servlet-class>Registration</servlet-class> 
+ </servlet>
+ <servlet-mapping>
+   <servlet-name>first</servlet-name>
+   <url-pattern>/register</url-pattern>
+ </servlet-mapping>
+
+
+<servlet>
+   <servlet-name>second</servlet-name>
+   <servlet-class>Login</servlet-class> 
+ </servlet>
+ <servlet-mapping>
+   <servlet-name>second</servlet-name>
+   <url-pattern>/log</url-pattern>
+ </servlet-mapping>
+
+
+<servlet>
+   <servlet-name>third</servlet-name>
+   <servlet-class>Account</servlet-class> 
+ </servlet>
+ <servlet-mapping>
+   <servlet-name>third</servlet-name>
+   <url-pattern>/account</url-pattern>
+ </servlet-mapping>
+
+
+<servlet>
+   <servlet-name>fourth</servlet-name>
+   <servlet-class>Alumni</servlet-class> 
+ </servlet>
+ <servlet-mapping>
+   <servlet-name>fourth</servlet-name>
+   <url-pattern>/alum</url-pattern>
+ </servlet-mapping>
+
+
+<servlet>
+   <servlet-name>fifth</servlet-name>
+   <servlet-class>Company</servlet-class> 
+ </servlet>
+ <servlet-mapping>
+   <servlet-name>fifth</servlet-name>
+   <url-pattern>/comp</url-pattern>
+ </servlet-mapping>
+
+<welcome-file-list>
+  <welcome-file>login.html</welcome-file>
+</welcome-file-list>
+</web-app>
